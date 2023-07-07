@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Sign In Page</title>
+</head>
+<body>
+	<label>Username : </label>
+	<input type='text' name='user_name'></br>
+	<label>Password : </label>
+	<input type='password' name='password'></br>
+	<button onclick='Signin()' name='sign_in'>Sign in</button>
+<script>
+	function Signin(){
+		var name = document.getElementsByName('user_name')[0].value;
+		var pass = document.getElementsByName('password')[0].value;
+		if(name==='username' && pass==='password'){
+			document.write(`<h1>Hellow User</h1>`);
+			//window.open('./Signin_page.html');
+		}
+		else{
+			document.write("Wrong details");
+		}
+	}
+</script>
+</body>
+	
